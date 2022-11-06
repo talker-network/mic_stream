@@ -20,7 +20,7 @@ public class SwiftMicStreamPlugin: NSObject, FlutterStreamHandler, FlutterPlugin
     var CHANNEL_CONFIG:ChannelConfig = ChannelConfig.CHANNEL_IN_MONO;
     var SAMPLE_RATE:Int = 44100; // this is the sample rate the user wants
     var actualSampleRate:Float64?; // this is the actual hardware sample rate the device is using
-    var AUDIO_FORMAT:AudioFormat = AudioFormat.ENCODING_PCM_16BIT; // this is the encoding/bit-depth the user wants
+    var AUDIO_FORMAT:AudioFormat = AudioFormat.ENCODING_PCM_8BIT; // this is the encoding/bit-depth the user wants
     var actualBitDepth:UInt32?; // this is the actual hardware bit-depth
     var AUDIO_SOURCE:AudioSource = AudioSource.DEFAULT;
     var BUFFER_SIZE = 4096;
